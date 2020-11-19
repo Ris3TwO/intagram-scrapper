@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 });
 router.get('/updateDolarPrice', (req, res) => {
     (async() => {
-        await ig.initializeDebug();
+        await ig.initialize();
 
         await ig.login('mari.posada_', 'M24j631r089B.');
 
