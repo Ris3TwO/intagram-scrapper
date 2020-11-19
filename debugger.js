@@ -1,4 +1,4 @@
-const ig = require('./instagram');
+const ig = require('./commands/instagram');
 
 (async() => {
 

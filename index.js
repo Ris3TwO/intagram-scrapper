@@ -1,4 +1,4 @@
-const ig = require('./express/instagram');
+const ig = require('./commands/instagram');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');

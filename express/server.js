@@ -5,7 +5,7 @@ const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
 
-const ig = require('./instagram');
+const ig = require('../commands/instagram');
 
 const router = express.Router();
 router.get('/', (req, res) => {
