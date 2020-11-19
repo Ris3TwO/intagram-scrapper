@@ -4,6 +4,7 @@ const path = require('path');
 const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
+const encoding = require('encoding');
 
 const ig = require('../commands/instagram');
 

@@ -127,10 +127,10 @@ const instagram = {
             console.log(file);
         })
 
-        const fichero = Jimp.read('./img/' + files[0]).then(lenna => {
+        const fichero = Jimp.read('../img/' + files[0]).then(lenna => {
                 return lenna
                     .greyscale() // set greyscale
-                    .write('./img/' + files[0]); // save
+                    .write('../img/' + files[0]); // save
             })
             .catch(err => {
                 console.error(err);
@@ -141,7 +141,7 @@ const instagram = {
 
         let image = [];
 
-        let files = await fs.readdirSync('./img');
+        let files = await fs.readdirSync('../img');
 
         files.forEach(file => {
             image.push(file)
@@ -151,7 +151,7 @@ const instagram = {
         console.log(files[0]);
 
         let textDecrypt = await Tesseract.recognize(
-            './img/' + files[0],
+            '../img/' + files[0],
             'eng', { logger: m => console.log(m) }
         ).then(({ data: { text } }) => {
             if (text !== undefined && text !== '') {

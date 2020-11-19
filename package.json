@@ -13,6 +13,7 @@
     "dependencies": {
         "body-parser": "^1.19.0",
         "cors": "^2.8.5",
+        "encoding": "^0.1.13",
         "express": "^4.17.1",
         "jimp": "^0.16.1",
         "netlify-lambda": "^1.6.3",
